@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyPolice</string>
+    <string name="calendar">Calendar</string>
+    <string name="email">email</string>
+    <string name="Email">Email</string>
+    <string name="scan">Scan</string>
+    <string name="notes">Notes</string>
+    <string name="camera">Camera</string>
+    <string name="sos">SOS</string>
+    <string name="settings">Settings</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="back">BACK</string>
+</resources>
