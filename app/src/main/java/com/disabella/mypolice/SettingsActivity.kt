@@ -3,9 +3,11 @@ package com.disabella.mypolice
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.provider.AlarmClock.EXTRA_MESSAGE
 import android.view.View
 import android.widget.Switch
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 
 
 class SettingsActivity : AppCompatActivity() {
@@ -15,24 +17,15 @@ class SettingsActivity : AppCompatActivity() {
 
         val switchView = findViewById<View>(R.id.switchView)
 
-        val settingsLayout = findViewById<View>(R.id.settingsLayout)
-
         switchView.setOnClickListener(View.OnClickListener { v ->
             val checked = (v as Switch).isChecked
             if (checked) {
-                settingsLayout.setBackgroundColor(Color.BLACK)
-                intent.putExtra("mainLayout", "BLACK")
-
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
             } else {
-                settingsLayout.setBackgroundColor(Color.WHITE)
-                intent.putExtra("mainLayout", "WHITE")
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             }
-        })
 
-        val buttonBack = findViewById<View>(R.id.buttonBack)
-        buttonBack.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
-        }
+        })
 
 
     }
