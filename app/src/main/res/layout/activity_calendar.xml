@@ -1,9 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".CalendarActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:text="@string/date_of_coming"
+        android:textColor="#ff8426" />
+
+    <EditText
+        android:id="@+id/date_of_coming"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:hint="@string/dd_mm_yy"
+        android:textColor="#ffcba3"
+        android:textColorHint="#b0b0b0" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="@string/date_of_departure"
+        android:textColor="#ff8426" />
+
+    <EditText
+        android:id="@+id/date_of_departure"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:hint="@string/dd_mm_yy"
+        android:textColor="#ffcba3"
+        android:textColorHint="#b0b0b0" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#ff8426"
+        android:text="@string/ok" />
+    <TextView
+        android:id="@+id/textview_count"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>
