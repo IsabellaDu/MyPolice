@@ -16,4 +16,5 @@
     <string name="ok">OK</string>
     <string name="enter_the_license_plate_of_car">Enter the license plate of car:</string>
     <string name="license_plate_hint">CG1234HJ</string>
+    <string name="feature_textview">This app feature is under development</string>
 </resources>
