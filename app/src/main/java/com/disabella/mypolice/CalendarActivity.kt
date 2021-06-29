@@ -30,7 +30,7 @@ class CalendarActivity : AppCompatActivity() {
         val date: String = df.format(Calendar.getInstance().time)
 
         val todaysDate = df.parse(date)
-        val dateOfDepartureToDate = df.parse(dateOfDeparture.toString())
+        val dateOfDepartureToDate = df.parse(dateOfDeparture.text.toString())
 
         val difference: Long = todaysDate.time - dateOfDepartureToDate.time
         val days =
