@@ -25,22 +25,6 @@
         android:textColor="#ffcba3"
         android:textColorHint="#b0b0b0" />
 
-    <TextView
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:text="@string/date_of_departure"
-        android:textColor="#ff8426" />
-
-    <EditText
-        android:id="@+id/date_of_departure"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:hint="@string/dd_mm_yy"
-        android:textColor="#ffcba3"
-        android:textColorHint="#b0b0b0" />
-
     <Button
         android:id="@+id/button_count"
         android:layout_width="70dp"
@@ -49,12 +33,13 @@
         android:layout_marginTop="20dp"
         android:background="#ff8426"
         android:text="@string/ok" />
+
     <TextView
         android:id="@+id/textview_count"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp" />
 
 
 </LinearLayout>
