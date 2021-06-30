@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import org.w3c.dom.Text
 
 class ScanActivity : AppCompatActivity() {
@@ -25,12 +26,23 @@ class ScanActivity : AppCompatActivity() {
         )
 
         buttonCheck.setOnClickListener {
-            val result = presenceOfCarInDatabase(listOfRegisteredCars, licensePlate.text.toString())
 
-            if (result == 1) {
-                textViewCheck.text = "This car is registered"
+            if (licensePlate.text.isEmpty()) {
+                val toast = Toast.makeText(
+                    applicationContext,
+                    "First enter the vehicle license plate ",
+                    Toast.LENGTH_SHORT
+                )
+                toast.show()
             } else {
-                textViewCheck.text = "This car is not registered"
+                val result =
+                    presenceOfCarInDatabase(listOfRegisteredCars, licensePlate.text.toString())
+
+                if (result == 1) {
+                    textViewCheck.text = "This car is registered"
+                } else {
+                    textViewCheck.text = "This car is not registered"
+                }
             }
         }
     }
